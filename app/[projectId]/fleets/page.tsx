@@ -635,7 +635,6 @@ export default function FleetsPage() {
               <TableHead className="text-right">MW</TableHead>
               <TableHead>Origination</TableHead>
               <TableHead>Lifespan</TableHead>
-              <TableHead>Failure Rate</TableHead>
               <TableHead>Assigned Sites</TableHead>
               <TableHead className="w-32"></TableHead>
             </TableRow>
@@ -644,7 +643,7 @@ export default function FleetsPage() {
             {fleets.length === 0 ? (
               <TableRow>
                 <TableCell
-                  colSpan={8}
+                  colSpan={7}
                   className="text-center text-muted-foreground py-8"
                 >
                   No fleets yet. Create one to get started.
@@ -669,9 +668,6 @@ export default function FleetsPage() {
                       {format(new Date(fleet.originationDate), "MMM d, yyyy")}
                     </TableCell>
                     <TableCell>{fleet.lifespanYears} years</TableCell>
-                    <TableCell>
-                      {(fleet.yearlyFailureRate * 100).toFixed(1)}%
-                    </TableCell>
                     <TableCell>
                       <div className="flex flex-wrap gap-1">
                         {assignedSites.length === 0 ? (

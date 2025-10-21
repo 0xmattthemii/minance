@@ -108,7 +108,6 @@ export default function ASICModelsPage() {
           powerW: parseFloat(formData.powerW),
           hashrateThS: parseFloat(formData.hashrateThS),
           pricePerTh: parseFloat(formData.pricePerTh),
-          isPredefined: false,
         });
         toast({
           title: "Success",

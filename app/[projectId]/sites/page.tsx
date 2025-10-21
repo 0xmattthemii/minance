@@ -147,7 +147,7 @@ function SortableFleetItem({
       <div className="flex-1">
         <div className="font-medium">{model?.name || "Unknown Model"}</div>
         <div className="text-sm text-muted-foreground">
-          {quantityDisplay} • {fleet.lifespanYears}y lifespan • {(fleet.yearlyFailureRate * 100).toFixed(1)}% failure rate
+          {quantityDisplay} • {fleet.lifespanYears}y lifespan
         </div>
       </div>
       {model && (
